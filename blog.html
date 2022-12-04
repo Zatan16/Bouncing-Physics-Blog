@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Blog on Bouncing Ball Physics</title>
+		<style>
+			code {
+				font-family: consolas;
+			}
+		</style>
+	</head>
+	<body>
+		<p></p>Many have wondered, “How to add realistic physics in my games and stuff?”, the solution to this is pretty simple. In this blog, we are going to create a simple bouncing ball based on realistic physics.
+		To begin with, we will create a blank HTML file. We are going to name it “index.html”. We are going to draw our bouncing ball onto the HTML5 canvas element. We are going to do everything using JavaScript, including, adding the canvas on the web page:</p>
+		<iframe src="https://codesandbox.io/embed/pedantic-dust-tpkb5w?fontsize=14&hidenavigation=1&initialpath=%2Findex1.html&module=%2Findex1.html&theme=dark"
+		style="width:100%; height:700px; border:0; border-radius: 4px; overflow:hidden;"
+		title="pedantic-dust-tpkb5w"
+		allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+		sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe><br>
+
+		<p>The next step, is to create a ball which bounces on the screen:</p>
+		<iframe src="https://codesandbox.io/embed/pedantic-dust-tpkb5w?fontsize=14&hidenavigation=1&initialpath=%2Findex2.html&module=%2Findex2.html&theme=dark"
+		style="width:100%; height:700px; border:0; border-radius: 4px; overflow:hidden;"
+		title="pedantic-dust-tpkb5w"
+		allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+		sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+		<p>As you can see, I have added few properties for the ball, like its vertical position, its velocity, and acceleration. I have also added the gravitaional constant same as on the Earth (9.8 metre per second square). And also, by using the context of the canvas, we have drawn the ball onto the screen and added a clearRect() function so that, if we call this function in an animation, it will clear the screen before drawing the next frame. Now, we will add a simple game loop, and make our ball fall down:</p>
+		<iframe src="https://codesandbox.io/embed/pedantic-dust-tpkb5w?fontsize=14&hidenavigation=1&initialpath=%2Findex3.html&module=%2Findex3.html&theme=dark"
+		style="width:100%; height:700px; border:0; border-radius: 4px; overflow:hidden;"
+		title="pedantic-dust-tpkb5w"
+		allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+		sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+		<p>Now, even tough there is a reset button on the codesandbox preview that you are viewing, for our user to actually load the animation again, we need to add a reset button. As well as doing that, we will also add the collision detection code between the ground and the ball and make the ball bounce, this collision detection system will be the most basic and simplest one:</p>
+		<iframe src="https://codesandbox.io/embed/pedantic-dust-tpkb5w?fontsize=14&hidenavigation=1&initialpath=%2Findex4.html&module=%2Findex4.html&theme=dark"
+		style="width:100%; height:700px; border:0; border-radius: 4px; overflow:hidden;"
+		title="pedantic-dust-tpkb5w"
+		allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+		sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+		<p>We have succesfully, created realistic bouncing algorithm. If you have any doubts, you can e-mail me at <a href="mailto:syedzayaanali@gmail.com?subject=Doubt regarding boucing physics blog">syedzayaanali@gmail.com</a></p>
+
+		<p>Note: If the email link is not working, then its probably because of how protocol handlers are set up on your device, it you are unsure about the settings, then follow according to the <a href="https://support.pipedrive.com/en/article/how-can-i-set-gmail-as-my-browser-s-default-email-client#:~:text=If%20you%20were%20unable%20to%20see%20the%20Protocol%20Handler%20icon%2C">link</a>. Or else, you could just search protocol handler in the search bar of your browser settings and enable your mail site.</p>
+	</body>
+</html>
